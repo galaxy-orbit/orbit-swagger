@@ -124,7 +124,7 @@ export class DocumentBuilder {
     return this;
   }
 
-  build(): Omit<OpenAPIDocument, 'paths'> {
-    return this.document as Omit<OpenAPIDocument, 'paths'>;
+  build(): OpenAPIDocument {
+    return this.document as OpenAPIDocument;
   }
 }
